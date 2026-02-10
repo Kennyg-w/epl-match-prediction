@@ -1,0 +1,13 @@
+# Python 
+__pycache__/
+*.py[cod]
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Data (Ignore the large dataset folder)
+data/
+!data/.gitkeep
+
+# Mac System Files
+.DS_Store
