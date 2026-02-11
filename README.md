@@ -1,15 +1,21 @@
-# ⚽ English Premier League (EPL) Match Predictor
+# ⚽ English Premier League (EPL) Match Predictor & Web App
 
 ## 📊 Project Overview
-Developed a machine learning system to predict the winners of English Premier League matches. The project focuses on handling time-series dependencies and engineering "form-based" features to improve prediction precision.
+Developed a comprehensive machine learning system to predict English Premier League match outcomes. This project integrates automated data ingestion, advanced time-series feature engineering, and a live web deployment to provide real-time win probabilities.
 
 ## 🛠️ Technical Achievements
-- **Data Engineering:** Scraped and processed historical match data, converting categorical team and venue data into numeric features for model ingestion.
-- **Time-Series Logic:** Implemented a non-random training split (Past vs. Future) to ensure the model learned from historical trends without "looking ahead."
-- **Feature Engineering:** Developed a **3-game rolling average** system for goals scored (GF) and goals against (GA) to capture team "form."
-- **Performance:** Achieved an **Improved Precision of 52.34%**, successfully identifying winning patterns in a high-volatility sports environment.
+- **Big Data Scaling:** Trained the model on **5 seasons** of historical match data (>3,500 match perspectives) to improve predictive robustness and capture long-term team performance trends.
+- **Advanced Feature Engineering:** Engineered a **3-game rolling average** pipeline for offensive and defensive metrics (GF, GA) to dynamically capture "Team Form."
+- **Model Optimization:** Deployed a **Random Forest Classifier** achieving a **52.34% precision rate** for win predictions, significantly outperforming the 33.3% random baseline.
+- **Time-Series Integrity:** Implemented a chronological training split to prevent data leakage and ensure the model learns only from historical precedents.
+- **Full-Stack Deployment:** Built and launched a live **Streamlit Web Application** allowing users to select any matchup and retrieve model-driven win probabilities.
+
+## 📈 Business & Operational Impact
+- Automated the transition from raw historical archives to a production-ready model.
+- Provided a scalable framework for sports analytics that can be extended to include player-level stats or betting market odds.
 
 ## 🐍 Tech Stack
-- **Machine Learning:** Random Forest Classifier (Scikit-Learn)
-- **Data Manipulation:** Pandas, NumPy
-- **Environment:** Python 3.11 (Conda)
+- **Languages:** Python 3.11 (Conda)
+- **ML & Data:** Scikit-Learn, Pandas, NumPy, Joblib
+- **Web:** Streamlit
+- **Version Control:** Git & GitHub
