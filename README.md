@@ -1,21 +1,15 @@
-# ⚽ English Premier League (EPL) Match Predictor & Web App
+# ⚽ EPL Match Outcome Predictor (2026 Update)
 
-## 📊 Project Overview
-Developed a comprehensive machine learning system to predict English Premier League match outcomes. This project integrates automated data ingestion, advanced time-series feature engineering, and a live web deployment to provide real-time win probabilities.
+## 📊 Project Summary
+Developed a machine learning web application to predict English Premier League match outcomes. The system utilises 7 seasons of historical data (2019-2026) to assess team strength and recent form.
 
-## 🛠️ Technical Achievements
-- **Big Data Scaling:** Trained the model on **5 seasons** of historical match data (>3,500 match perspectives) to improve predictive robustness and capture long-term team performance trends.
-- **Advanced Feature Engineering:** Engineered a **3-game rolling average** pipeline for offensive and defensive metrics (GF, GA) to dynamically capture "Team Form."
-- **Model Optimization:** Deployed a **Random Forest Classifier** achieving a **52.34% precision rate** for win predictions, significantly outperforming the 33.3% random baseline.
-- **Time-Series Integrity:** Implemented a chronological training split to prevent data leakage and ensure the model learns only from historical precedents.
-- **Full-Stack Deployment:** Built and launched a live **Streamlit Web Application** allowing users to select any matchup and retrieve model-driven win probabilities.
-
-## 📈 Business & Operational Impact
-- Automated the transition from raw historical archives to a production-ready model.
-- Provided a scalable framework for sports analytics that can be extended to include player-level stats or betting market odds.
+## 🛠️ Key Achievements
+- **Real-Time Data Pipeline:** Automated fetching of ongoing 2025/2026 season data directly from football-data.co.uk.
+- **Advanced Feature Engineering:** Engineered "Rolling Averages" (GF/GA) to capture short-term team momentum (Form).
+- **Modeling:** Trained a Random Forest Classifier with 200 estimators, prioritising Precision to ensure reliable "Win" predictions.
+- **Web UI:** Built an interactive dashboard using **Streamlit**, allowing users to select matchups and see real-time win probabilities.
 
 ## 🐍 Tech Stack
-- **Languages:** Python 3.11 (Conda)
-- **ML & Data:** Scikit-Learn, Pandas, NumPy, Joblib
-- **Web:** Streamlit
-- **Version Control:** Git & GitHub
+- **AI/ML:** Scikit-Learn, Random Forest
+- **Data:** Pandas, Joblib
+- **Web Framework:** Streamlit
