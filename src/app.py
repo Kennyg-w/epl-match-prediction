@@ -9,9 +9,8 @@ st.title("⚽ EPL Match Outcome Predictor")
 st.markdown("Predict outcomes based on 7 seasons of Premier League data.")
 
 # --- Path Configuration ---
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-MODEL_PATH = os.path.join(BASE_DIR, 'outputs', 'epl_model.pkl')
-DATA_PATH = os.path.join(BASE_DIR, 'data', 'processed_matches.csv')
+MODEL_PATH = 'outputs/epl_model.pkl'
+DATA_PATH = 'data/processed_matches.csv'
 
 # --- Load System Files ---
 if os.path.exists(MODEL_PATH) and os.path.exists(DATA_PATH):
